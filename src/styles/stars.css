@@ -1,0 +1,74 @@
+.notation {
+    align-items: center;
+    display: flex;
+    font-size: 1.7rem;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  .notation,
+  .one i::before {
+    content: "\f005   ";
+    color: #FF6060;
+  }
+  
+  .notation,
+  .one i::after {
+    content: "\f005   \f005  \f005  \f005";
+    color: #e3e3e3;
+  }
+  
+  .notation,
+  .two i::before {
+    content: "\f005  \f005";
+    color: #FF6060;
+  }
+  
+  .notation,
+  .two i::after {
+    content: "\f005  \f005  \f005";
+    color: #e3e3e3;
+  }
+  
+  .notation,
+  .three i::before {
+    content: "\f005   \f005   \f005";
+    color: #FF6060;
+  }
+  
+  .notation,
+  .three i::after {
+    content: "\f005  \f005";
+    color: #e3e3e3;
+  }
+  
+  .notation,
+  .four i::before {
+    content: "\f005   \f005   \f005   \f005";
+    color: #FF6060;
+  }
+  
+  .notation,
+  .four i::after {
+    content: "\f005";
+    color: #e3e3e3;
+  }
+  
+  .notation,
+  .five i::before {
+    content: "\f005   \f005   \f005   \f005   \f005";
+    color: #FF6060;
+  }
+  
+  .notation,
+  .five i::after {
+    content: "";
+    color: #e3e3e3;
+  }
+  
+  @media (max-width: 992px) {
+    .notation {
+      font-size: 1rem;
+    }
+  }

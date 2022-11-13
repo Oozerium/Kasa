@@ -1,0 +1,21 @@
+footer{
+    display: flex;
+    width: 100%;
+    height: 209px;
+    background: #000000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-top: 11rem;
+    
+}
+.logo{
+    margin-bottom: 15px;
+}
+
+
+footer p{
+    color: white;
+    
+}
