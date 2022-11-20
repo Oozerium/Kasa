@@ -24,7 +24,7 @@
   
   .accomodation__carousel .controls button i {
     color: white;
-    font-size: 5rem;
+    font-size: 80px;
   }
   
   .accomodation__carousel .controls p {
@@ -32,15 +32,15 @@
     color: white;
     font-size: 18px;
     font-weight: 500;
-    margin: 0 auto 1.5rem auto;
+    margin: 0 auto 24px auto;
   }
   
   .controls__previous {
-    margin-left: 1.5rem;
+    margin-left: 24px;
   }
   
   .controls__next {
-    margin-right: 1.5rem;
+    margin-right: 24px;
   }
   
   .accomodation__carousel img {

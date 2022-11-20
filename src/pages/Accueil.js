@@ -6,26 +6,27 @@ import Card from '../components/Card'
 import { Link } from 'react-router-dom'
 import '../styles/home.css'
 
-function Accueil ({accomodations}) {
+function Accueil({ accomodations }) {
 
     useEffect(() => {
-        document.title=`Kasa - Accueil`
-    } );
+        document.title = `Kasa - Accueil`
+    });
 
     return (
-<main>
-      <section className="home">
-        <Banner title="Chez vous, partout et ailleurs" type="banner-home" />
-        <div className='home-cards'>
-        <ul className='accomodation-list'>
-            
-            {accomodations.map((accomodation) => (<li key={accomodation.id}><Link to={`/accomodation/${accomodation.id}`}> <Card title={accomodation.title} cover={accomodation.cover}/> </Link></li>))}
-        </ul>
+        <main>
+            <section className="home">
+                <Banner title="Chez vous, partout et ailleurs" type="banner-home" />
+                <div className='home-cards'>
+                    <ul className='accomodation-list'>
 
-        </div>
-      </section>
-      
-</main>
+                        {accomodations.map((accomodation) => (<li key={accomodation.id}><Link to={`/accomodation/${accomodation.id}`}>
+                            <Card title={accomodation.title} cover={accomodation.cover} /> </Link></li>))}
+                    </ul>
+
+                </div>
+            </section>
+
+        </main>
     );
 };
 

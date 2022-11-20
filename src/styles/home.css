@@ -2,7 +2,9 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 48px;
+    margin-left: 100px;
+    margin-right: 100px;
   }
 
   .home-cards {
@@ -16,14 +18,15 @@
     border-radius: 25px;
     display: flex;
     flex-wrap: wrap;
-    gap: 1.1rem;
+    gap: 18px;
     padding: 40px 0;
     width: 90%;
-    list-style-type:none
+    list-style-type:none;
+    justify-content: space-around;
   }
   
   .accomodation-list li {
-    padding: 1rem;
+    padding: 16px;
   }
   
   @media (max-width: 1280px) {
@@ -45,7 +48,9 @@
   
   @media (max-width: 768px) {
     .home {
-      gap: 0rem;
+      gap: 0px;
+      margin-left: 20px;
+      margin-right: 20px;
     }
   
     .banner-home{
@@ -60,11 +65,11 @@
     .accomodation-list {
       margin: 20px 0;
       padding: 0;
-      gap: 1.25rem;
+      gap: 20px;
       width: auto;
     }
   
     .accomodation-list li {
-      padding: 0rem;
+      padding: 0;
     }
   }

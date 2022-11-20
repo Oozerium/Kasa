@@ -18,8 +18,9 @@
   .accomodation_info_content ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 16px;
     margin-top: 20px;
+    padding-left: 0;
   }
   
   .accomodation_info_content li {
@@ -33,7 +34,7 @@
     height: 25px;
     justify-content: center;
     min-width: 115px;
-    padding: 0.5rem 1rem;
+    padding: 8px 16px;
   }
   
   .profile {
@@ -49,7 +50,7 @@
   }
   
   .profile img {
-    border-radius: 25rem;
+    border-radius: 400px;
     height: 64px;
     object-fit: cover;
     object-position: center;
