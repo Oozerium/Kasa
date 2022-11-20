@@ -51,8 +51,12 @@ li a {
 }
 
 
+@media (max-width:1039px) {
+header nav ul li {
+    font-size: 22px;
 
-
+}
+}
 
 @media (max-width:769px) {
 
