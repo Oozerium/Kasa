@@ -21,7 +21,6 @@ function App() {
         setIsLoading(true);
       } catch (error) {
         setError(error);
-        console.log(error);
       }
     }
     fetchAccomodations();
