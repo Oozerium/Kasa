@@ -19,10 +19,10 @@ function Information({ accomodation }) {
             <div className='accomodation_info_content responsive'>
                 <div className='profile'>
                     <p>{accomodation.host.name}</p>
-                    <img src={accomodation.host.picture} alt={accomodation.host.name}/>
+                    <img src={accomodation.host.picture} alt={accomodation.host.name} />
 
                 </div>
-                <Stars notation={accomodation.rating}/>
+                <Stars notation={accomodation.rating} />
             </div>
         </div>
     );

@@ -1,20 +1,18 @@
 import React from 'react';
-
 import { useState } from 'react';
-
 import '../styles/gallery.css'
 
 function Gallery({ images }) {
 
     const [galleryPosition, setgalleryPosition] = useState(0)
 
-    const suivant = () => {
+    const next = () => {
         galleryPosition < images.length - 1
             ? setgalleryPosition(galleryPosition + 1)
             : setgalleryPosition(0)
     }
 
-    const precedent = () => {
+    const previous = () => {
         galleryPosition > 0
             ? setgalleryPosition(galleryPosition - 1)
             : setgalleryPosition(images.length - 1)
@@ -24,7 +22,7 @@ function Gallery({ images }) {
         <div className='accomodation__carousel'>
             <div className='controls'>
                 {images.length > 1 ? (
-                    <button className='control__previous' onClick={() => precedent()}>
+                    <button className='control__previous' onClick={() => previous()}>
                         <i className='fa-solid fa-chevron-left'></i>
                     </button>
 
@@ -32,7 +30,7 @@ function Gallery({ images }) {
 
                 <p>{galleryPosition + 1}/{images.length}</p>
                 {images.length > 1 ? (
-                    <button className='control__next' onClick={() => suivant()}>
+                    <button className='control__next' onClick={() => next()}>
                         <i className='fa-solid fa-chevron-right'></i>
                     </button>
                 ) : null}

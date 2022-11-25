@@ -9,9 +9,7 @@ import Gallery from '../components/Gallery'
 import Informations from '../components/Information'
 
 import Dropdown from '../components/Dropdown'
-
 import Error from '../_utils/Error'
-
 import '../styles/accomodation.css'
 
 const Accomodation = ({ accomodations }) => {
@@ -26,12 +24,12 @@ const Accomodation = ({ accomodations }) => {
 
   return accomodation ? (
     <main>
-      <section className="accomodation">
+      <section className='accomodation'>
         <Gallery images={accomodation.pictures} />
         <Informations accomodation={accomodation} />
-        <div className="accomodation__dropdowns">
-          <Dropdown title="Description" description={accomodation.description} type="drop-Accomodation" />
-          <Dropdown title="Equipement" description={accomodation.equipments} type="drop-Accomodation" />
+        <div className='accomodation__dropdowns'>
+          <Dropdown title='Description' description={accomodation.description} type='drop-Accomodation' />
+          <Dropdown title='Equipement' description={accomodation.equipments} type='drop-Accomodation' />
         </div>
       </section>
     </main>

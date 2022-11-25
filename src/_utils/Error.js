@@ -21,7 +21,7 @@ function Error() {
             <p>Oups! La page que vous demandez n'existe pas.</p>
 
 
-            <p className='retour'><NavLink to="/accueil">Retourner sur la page d'accueil</NavLink></p>
+            <p className='return'><NavLink to='/home'>Retourner sur la page d'accueil</NavLink></p>
         </div>
     );
 };
